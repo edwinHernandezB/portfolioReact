@@ -50,9 +50,61 @@
   text-decoration: none;
   color: inherit;
 }
+.header-nav a {
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px; /* Bordes ligeramente redondeados (opcional) */
+  padding: 0.5rem 0.5rem; /* Espaciado interno para que el cuadro sea más grande */
+  transition: all 0.3s; /* Animación suave para la transición */
+}
 
+.header-nav .active,
+.header-nav a:hover {
+  background-color: #000000; /* Color azul del cuadro */
+  color: rgb(255, 255, 255); /* Cambia el texto a blanco para que resalte */
+}
 
 /* BODY */
 
-
 /* FOOTER */
+.footer-container {
+  background-color: black;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.footer-container nav a {
+  color: #aaa;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.social-icons a {
+  color: #aaa;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-container .linkedin-icon {
+  color: #0a66c2;
+  font-size: 24px;
+}
+
+.footer-container .github-icon {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-container p {
+  font-size: 14px;
+  color: #aaa;
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+const getNavLinkClass = ({ isActive }) => isActive ? 'active' : '';
+
 export const Header = () => {
   return (
     <header className="header">
@@ -10,11 +12,11 @@ export const Header = () => {
 
       <nav className="header-nav">
         <ul>
-          <li><NavLink href="/">Home</NavLink></li>
-          <li><NavLink href="/projects">Projects</NavLink></li>
-          <li><NavLink>About</NavLink></li>
-          <li><NavLink href="/contact">Contact</NavLink></li>
-          <li><NavLink href="/skills">Skills</NavLink></li>
+          <li><NavLink to="/" className={getNavLinkClass}>Home</NavLink></li>
+          <li><NavLink to="/projects" className={getNavLinkClass}>Projects</NavLink></li>
+          <li><NavLink to="/about" className={getNavLinkClass}>About</NavLink></li>
+          <li><NavLink to="/contact" className={getNavLinkClass}>Contact</NavLink></li>
+          <li><NavLink to="/skills" className={getNavLinkClass}>Skills</NavLink></li>
         </ul>
       </nav>
         <hr />
