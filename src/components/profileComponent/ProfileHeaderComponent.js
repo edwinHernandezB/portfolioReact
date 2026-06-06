@@ -2,7 +2,7 @@ import React from "react";
 
 export const ProfileHeaderComponent = () => {
   return (
-    <div className="profile-hero">
+    <section className="profile-hero">
       <div className="profile-header">
         <h1>Welcome to My Portfolio</h1>
         <p>
@@ -23,6 +23,6 @@ export const ProfileHeaderComponent = () => {
         alt="Profile"
         className="profile-picture"
       />
-    </div>
+    </section>
   );
 };
