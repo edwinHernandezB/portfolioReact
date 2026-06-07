@@ -5,12 +5,8 @@ export const ProfileHeaderComponent = () => {
     <section className="profile-hero">
       <div className="profile-header">
         <h1>Welcome to My Portfolio</h1>
-        <p>
-          Hi, I'm Edwin, a passionate software developer with a love for
-          creating innovative solutions. With experience in various programming
-          languages and frameworks, I enjoy tackling complex problems and
-          building user-friendly applications. Explore my projects and skills to
-          see what I've been working on!
+        <p> lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
         </p>
         <div className="button-group">
           <button className="primary-button">View My Work</button>
