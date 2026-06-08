@@ -120,6 +120,7 @@
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 /* PROFILE BUTTONS */
@@ -164,7 +165,7 @@ grid-template-columns: 2fr 1fr 1fr;
 grid-template-areas:
   "header header header"
   "projects about contact"
-  "articles experience experience"
+  "education experience experience"
   "skills skills skills";
     gap: 0 2rem;
 }
@@ -174,7 +175,7 @@ grid-template-areas:
 .projects { grid-area: projects; }
 .about { grid-area: about; }
 .contact { grid-area: contact; }
-.articles { grid-area: articles; }
+.education { grid-area: education; }
 .experience {
   grid-column: 2 / span 2; /* ocupa las dos columnas derechas */
 }.skills { grid-area: skills; }

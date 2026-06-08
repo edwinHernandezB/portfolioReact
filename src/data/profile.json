@@ -1,0 +1,73 @@
+{
+  "name": "Edwin",
+  "title": "Software Developer",
+  "location": "Barcelona, Spain",
+  "email": "edwinhb139@gmail.com",
+  "website": "https://example.com",
+  "about": "Hi, I'm Edwin, graduate in Computer Engineering with a focus on Information Technologies. Professional with over three years of experience in digital banking, specialized in front‑end development for card services. </br></br> Bringing direct client interaction, support in team management, and the ability to optimize processes and improve system reliability.  </br> Additional experience in middleware and monitoring, working with IBM MQ to ensure robust communication flows.",
+  "summaryAbout": "TODO: PULIR Software developer with experience in JavaScript, Node.js, React, and Java. I enjoy creating efficient and scalable applications that solve real-world problems. With a strong background in software development and a commitment to continuous learning, I am eager to contribute my skills to innovative projects.",
+  "skills": [
+    { "technology": "JavaScript", "level": "75%" },
+    { "technology": "Node.js", "level": "75%" },
+    { "technology": "React", "level": "70%" },
+    { "technology": "Java", "level": "75%" },
+    { "technology": "Git", "level": "75%" },
+    { "technology": "JSON", "level": "80%" }
+  ],
+  "experience": [
+    {
+      "company": "VASS",
+      "role": [
+        { "name": "Tech Consultant" },
+        { "name": "Android Developer" },
+        { "name": "Junior Android Developer" }
+      ],
+      "years": [
+        { "start": "2025", "end": "Present" },
+        { "start": "2023", "end": "2025" },
+        { "start": "2021", "end": "2023" }
+      ],
+      "summary": "Internship focused on process optimization and system maintenance",
+      "points": [
+        "Design, development, and maintenance of the software responsible for managing banking card operations, ensuring reliable and seamless functionality on the client side. Technical support to the team and direct communication with the client regarding feature development, system enhancements, and incident resolution.",
+        "Development and maintenance of software for banking card operations. Support in the management and guidance of Junior team members.",
+        "Development of functionalities, components, and maintenance for the Android implementation of the digital banking application."
+      ]
+    },
+    {
+      "company": "NTT DATA",
+      "role": [{ "name": "Intern IST (Process & System Technician)" }],
+      "years": [{ "start": "2020", "end": "2021" }],
+      "summary": "Internship focused on process optimization and system maintenance",
+      "points": [
+        "Creation of messaging middleware infrastructures, checking alerts and the correct status of the systems. Use of IBM MQ"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "Computer Engineering",
+      "specialization": "Information Technologies",
+      "institution": "Universitat Autònoma de Barcelona",
+      "year": 2021,
+      "image": "https://i0.wp.com/tedas.telearchaeology.org/wp-content/uploads/2018/03/logo-uab.jpg?w=713&ssl=1"
+    },
+    {
+      "name": "Bachelor",
+      "specialization": "Science",
+      "institution": "IES Rambla Prim",
+      "year": 2015,
+      "image": "https://agora.xtec.cat/iesramblaprim/wp-content/uploads/usu651/2018/02/logo_prim.png"
+    }
+  ],
+  "Projects": [
+    {
+      "name": "Trafic-Analyzer",
+      "description": "Linux tool that provides a graphical interface for network‑traffic analysis and educational simulations. It integrates native Linux utilities to simplify data analysis and includes practical simulations to reinforce networking concepts."
+    },
+    {
+      "name": "PortFolio",
+      "description": "Minimalist personal portfolio to reinforce concepts of React, project structure, components, styles, and more."
+    }
+  ]
+}

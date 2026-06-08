@@ -1,44 +1,23 @@
 import React from "react";
 import "./CardItemComponent.css";
 
-export const CardItemComponent = () => {
+export const CardItemComponent = (props) => {
   return (
     <>
       <section className="card-item">
         <img
           className="card-image"
-          src="/default-image.png"
-          alt="Profile"
+          src={props.image || "/default-image.png"}
+          alt={props.title}
         />
         <div className="card-info">
           <hr className="card-separator" />
 
-          <h3 className="card-subtitle">title</h3>
+          <h3 className="card-subtitle">{props.title}</h3>
           <div className="card-description-row">
-            <p className="card-description">
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <button className="card-button">View Details</button>
-          </div>
-        </div>
-      </section>
-      <section className="card-item">
-        <img
-          className="card-image"
-          src="/default-image.png"
-          alt="Profile"
-        />
-        <div className="card-info">
-          <hr className="card-separator" />
-
-          <h3 className="card-subtitle">title</h3>
-          <div className="card-description-row">
-            <p className="card-description">
-              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <button className="card-button">View Details</button>
+            <p className="card-description">{props.description}</p>
+            {props.buttonText && <button className="card-button">{props.buttonText}</button> }
+            {props.placeholderText && <p className="card-placeholder">{props.placeholderText}</p>}
           </div>
         </div>
       </section>

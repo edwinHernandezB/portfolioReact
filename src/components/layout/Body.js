@@ -4,8 +4,11 @@ import { CardItemComponent } from "../CardItemCopmonent/CardItemComponent";
 import { AboutSummaryComponent } from "../AboutSummaryComponent/AboutSummaryComponent";
 import { FormComponent } from "../FormComponent/FormComponent";
 import { SkillComponent } from "../SkillComponent/SkillComponent";
+import data from "../../data/profile.json";
 
 export const Body = () => {
+  console.log(data.skills.map((skill) => console.log(skill.technology)));
+
   return (
     <section className="body-content">
       <div className="header">
@@ -15,7 +18,16 @@ export const Body = () => {
 
       <div className="projects">
         <h2>My Projects</h2>
-        <CardItemComponent />
+         {data.Projects.map((project, index) => (
+          <div key={index} className="experience-item">
+            <CardItemComponent
+              title={project.name}
+              description={project.description}
+              button={true}
+              buttonText="View details"
+            />
+          </div>
+        ))}
       </div>
 
       <div className="about">
@@ -27,25 +39,36 @@ export const Body = () => {
         <FormComponent />
       </div>
 
-      <div className="articles">
-        <h2>More Articles</h2>
+      <div className="education">
+        <h2>Education</h2>
         <CardItemComponent />
       </div>
 
       <div className="experience">
         <h2>Experience</h2>
-        <CardItemComponent />
+        {data.experience.map((exp, index) => (
+          <div key={index} className="experience-item">
+            <CardItemComponent
+              title={exp.company}
+              description={exp.summary}
+              button={true}
+              buttonText={`${exp.years[exp.years.length - 1].start} - ${exp.years[0].end}`}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="skills">
         <h2>Technical Skills</h2>
         <div className="skills-container">
-  <SkillComponent label="JavaScript" level={85} />
-  <SkillComponent label="React" level={80} />
-  <SkillComponent label="Node.js" level={70} />
-  <SkillComponent label="CSS" level={90} />
-</div>
-
+          {data.skills.map((skill, index) => (
+            <SkillComponent
+              key={index}
+              technology={skill.technology}
+              level={skill.level}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
