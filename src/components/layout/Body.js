@@ -7,24 +7,27 @@ import { SkillComponent } from "../SkillComponent/SkillComponent";
 import data from "../../data/profile.json";
 
 export const Body = () => {
-  console.log(data.skills.map((skill) => console.log(skill.technology)));
-
   return (
     <section className="body-content">
       <div className="header">
-        <ProfileHeaderComponent />
+        <ProfileHeaderComponent 
+        title="Welcome to My Portfolio"
+        about={data.about}
+        image={data.image}
+        />
         <hr />
       </div>
 
       <div className="projects">
         <h2>My Projects</h2>
-         {data.Projects.map((project, index) => (
+        {data.Projects.map((project, index) => (
           <div key={index} className="experience-item">
             <CardItemComponent
               title={project.name}
               description={project.description}
               button={true}
               buttonText="View details"
+              image={project.image}
             />
           </div>
         ))}
@@ -41,7 +44,17 @@ export const Body = () => {
 
       <div className="education">
         <h2>Education</h2>
-        <CardItemComponent />
+        {data.education.map((education, index) => (
+          <div key={index} className="experience-item">
+            <CardItemComponent
+              title={education.institution}
+              description={`${education.name} - ${education.specialization}`}
+              button={true}
+              placeholderText={education.year}
+              image={education.image}
+            />
+          </div>
+        ))}
       </div>
 
       <div className="experience">
@@ -53,6 +66,7 @@ export const Body = () => {
               description={exp.summary}
               button={true}
               buttonText={`${exp.years[exp.years.length - 1].start} - ${exp.years[0].end}`}
+              image={exp.image}
             />
           </div>
         ))}

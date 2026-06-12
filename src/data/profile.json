@@ -4,8 +4,9 @@
   "location": "Barcelona, Spain",
   "email": "edwinhb139@gmail.com",
   "website": "https://example.com",
+  "image": "/profile-picture.png",
   "about": "Hi, I'm Edwin, graduate in Computer Engineering with a focus on Information Technologies. Professional with over three years of experience in digital banking, specialized in front‑end development for card services. </br></br> Bringing direct client interaction, support in team management, and the ability to optimize processes and improve system reliability.  </br> Additional experience in middleware and monitoring, working with IBM MQ to ensure robust communication flows.",
-  "summaryAbout": "TODO: PULIR Software developer with experience in JavaScript, Node.js, React, and Java. I enjoy creating efficient and scalable applications that solve real-world problems. With a strong background in software development and a commitment to continuous learning, I am eager to contribute my skills to innovative projects.",
+  "summaryAbout": "Software developer with experience in JavaScript, Node.js, React, and Java. I enjoy creating efficient and scalable applications that solve real-world problems. With a strong background in software development and a commitment to continuous learning, I am eager to contribute my skills to innovative projects.",
   "skills": [
     { "technology": "JavaScript", "level": "75%" },
     { "technology": "Node.js", "level": "75%" },
@@ -32,7 +33,8 @@
         "Design, development, and maintenance of the software responsible for managing banking card operations, ensuring reliable and seamless functionality on the client side. Technical support to the team and direct communication with the client regarding feature development, system enhancements, and incident resolution.",
         "Development and maintenance of software for banking card operations. Support in the management and guidance of Junior team members.",
         "Development of functionalities, components, and maintenance for the Android implementation of the digital banking application."
-      ]
+      ],
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/LOGO_VASS_tagline.jpg"
     },
     {
       "company": "NTT DATA",
@@ -41,7 +43,8 @@
       "summary": "Internship focused on process optimization and system maintenance",
       "points": [
         "Creation of messaging middleware infrastructures, checking alerts and the correct status of the systems. Use of IBM MQ"
-      ]
+      ],
+      "image": "https://logovectorseek.com/wp-content/uploads/2019/08/ntt-data-corporation-logo-vector.png"
     }
   ],
   "education": [
@@ -63,11 +66,14 @@
   "Projects": [
     {
       "name": "Trafic-Analyzer",
-      "description": "Linux tool that provides a graphical interface for network‑traffic analysis and educational simulations. It integrates native Linux utilities to simplify data analysis and includes practical simulations to reinforce networking concepts."
+      "description": "Linux tool that provides a graphical interface for network‑traffic analysis and educational simulations. It integrates native Linux utilities to simplify data analysis and includes practical simulations to reinforce networking concepts.",
+      "image": "https://github.com/edwinHernandezB/TraficAnalyzer/blob/master/public/1.png?raw=true"
     },
     {
       "name": "PortFolio",
-      "description": "Minimalist personal portfolio to reinforce concepts of React, project structure, components, styles, and more."
+      "description": "Minimalist personal portfolio to reinforce concepts of React, project structure, components, styles, and more.",
+          "image": "/portfolio_image.png"
+
     }
   ]
 }

@@ -10,6 +10,7 @@
 .card-item .card-image {
   flex-shrink: 0;
     width: 200px;
+    border: 1px solid #949494;
 }
 
 .card-item .card-info {
@@ -43,7 +44,12 @@
 }
 
 .card-item .card-placeholder {
-    font-weight: bold;
+    flex-shrink: 0;
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #454546;
+  white-space: nowrap;
 }
 
 .card-separator {
