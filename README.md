@@ -1,4 +1,4 @@
-<img src="/public/1.png" alt="Simulacion TCP" /> 
+<img src="Captura de pantalla 2026-06-12 190500.pngg" alt="Simulacion TCP" /> 
 
 # Getting Started with Create React App
 
